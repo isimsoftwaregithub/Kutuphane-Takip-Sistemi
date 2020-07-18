@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="kutuphanedb" Class="dbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=kutuphanedb;Integrated Security=True" SettingsObjectName="kutuphane.Properties.Settings" SettingsPropertyName="kutuphanedbConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.view_iade" Member="view_iades">
+    <Type Name="view_iade">
+      <Column Name="odunc_no" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="uye_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="uye_tcno" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="adisoyadi" Type="System.String" DbType="VarChar(101)" CanBeNull="true" />
+      <Column Name="uye_tel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="kitap_no" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="kitap_barkod" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="kitap_adi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="odunc_alim_tarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="odunc_teslim_tarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="odunc_teslimetmesi_gereken_tarih" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="iadeEdildiMi" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

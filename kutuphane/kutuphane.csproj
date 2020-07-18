@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE0473A8-14A7-4632-934D-53ABC44039BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kutuphane</RootNamespace>
+    <AssemblyName>kutuphane</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>kutuphane.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Synchronization, Version=1.0.0.0">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Synchronization.Data, Version=2.0.0.0">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Synchronization.Data.Server, Version=2.0.0.0">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Synchronization.Data.SqlServerCe, Version=2.0.0.0">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anamenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anamenu.Designer.cs">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\db.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="edinim_report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edinim_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emanet_raport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emanet_raport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ean13.cs" />
+    <Compile Include="edinim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edinim.Designer.cs">
+      <DependentUpon>edinim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emanetrapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emanetrapor.Designer.cs">
+      <DependentUpon>emanetrapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iadeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iadeler.Designer.cs">
+      <DependentUpon>iadeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kategori_report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kategori_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="kitapara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapara.Designer.cs">
+      <DependentUpon>kitapara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapekle.Designer.cs">
+      <DependentUpon>kitapekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapodunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapodunc.Designer.cs">
+      <DependentUpon>kitapodunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapyazari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapyazari.Designer.cs">
+      <DependentUpon>kitapyazari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitap_report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kitap_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="kullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanici.Designer.cs">
+      <DependentUpon>kullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="raporkitaplistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raporkitaplistesi.Designer.cs">
+      <DependentUpon>raporkitaplistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tumkitaplar_report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tumkitaplar_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="turu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="turu.Designer.cs">
+      <DependentUpon>turu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uye_kitap_rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uye_kitap_rapor.Designer.cs">
+      <DependentUpon>uye_kitap_rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uye_kitap_report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uye_kitap_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uye_rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uye_rapor.Designer.cs">
+      <DependentUpon>uye_rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uye_report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uye_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="yazar_report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>yazar_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="yeniuyekaydi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yeniuyekaydi.Designer.cs">
+      <DependentUpon>yeniuyekaydi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anamenu.resx">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Database\db.dbml.layout">
+      <DependentUpon>db.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="edinim_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>edinim_report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emanet_raport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emanet_raport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edinim.resx">
+      <DependentUpon>edinim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emanetrapor.resx">
+      <DependentUpon>emanetrapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iadeler.resx">
+      <DependentUpon>iadeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kategori_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kategori_report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapara.resx">
+      <DependentUpon>kitapara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapekle.resx">
+      <DependentUpon>kitapekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapodunc.resx">
+      <DependentUpon>kitapodunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapyazari.resx">
+      <DependentUpon>kitapyazari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitap_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kitap_report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanici.resx">
+      <DependentUpon>kullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="raporkitaplistesi.resx">
+      <DependentUpon>raporkitaplistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tumkitaplar_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tumkitaplar_report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="turu.resx">
+      <DependentUpon>turu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uye_kitap_rapor.resx">
+      <DependentUpon>uye_kitap_rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uye_kitap_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>uye_kitap_report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uye_rapor.resx">
+      <DependentUpon>uye_rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uye_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>uye_report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yazar_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>yazar_report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yeniuyekaydi.resx">
+      <DependentUpon>yeniuyekaydi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\db.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>db.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\people-icon.png" />
+    <None Include="icon\people.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\kitapekle.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\kitapteslim.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\kitapara.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\kullaniciekle.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\oturum.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\cikis.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\Save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\yeniuye.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\duzelt.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\sil.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\kapat.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\liste.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\giris.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\login.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\sign-up-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\ileri.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\geri.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
